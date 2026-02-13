@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WhySoManyTabs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header>
+    <span class="material-icons icon">tab</span>
+    <h1>WhySoManyTabs</h1>
+    <p class="subtitle">Control the chaos.</p>
+  </header>
+
+  <!-- POWER BUTTON -->
+  <div class="power-wrapper">
+    <button id="powerBtn" class="power on">
+      <span class="material-icons">power_settings_new</span>
+      <span id="powerText">ON</span>
+    </button>
+  </div>
+
+  <!-- LIVE COUNTER -->
+  <div class="counter-card">
+    <div id="tabCount" class="count">0 / 0</div>
+    <div class="count-label">tabs open</div>
+  </div>
+
+  <!-- OPTIONS -->
+  <div id="options" class="card">
+
+    <div class="row">
+      <span>Tab limit</span>
+      <select id="limit">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="custom">Custom</option>
+      </select>
+    </div>
+
+    <div class="row hidden" id="customLimitRow">
+      <span>Custom limit</span>
+      <input type="number" id="customLimit" min="1">
+    </div>
+
+    <div class="row">
+      <span>Auto-close oldest tab</span>
+      <label class="switch">
+        <input type="checkbox" id="autoClose">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="row">
+      <span>System notifications</span>
+      <label class="switch">
+        <input type="checkbox" id="notify">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Developed by
+      <a href="https://www.youtube.com/@PoorvithsLife_Official/" target="_blank">
+        Poorvith T A
+      </a>
+    </p>
+
+    <p class="github">
+      <a href="https://github.com/PoorvithTA" target="_blank">
+        <span class="material-icons">code</span>
+        GitHub
+      </a>
+    </p>
+  </footer>
+
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
