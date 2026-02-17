@@ -68,7 +68,7 @@ This extension protects:
 ## 👨‍💻 Developer
 
 Made with 💓 & Care by  
-Poorvith T.A  
+Poorvith T A  
 
 YouTube: https://youtube.com/@PoorvithsLife_Official  
 GitHub: https://github.com/PoorvithTA
